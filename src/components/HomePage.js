@@ -58,6 +58,7 @@ export default class HomePage extends React.Component{
 				PGK: .29193,
 				PKR: .00576,
 				CDF: .00050,
+				GBP: 1.35405,
 				converted: null,
 				where: 'Where?'
 				
@@ -111,6 +112,7 @@ export default class HomePage extends React.Component{
 	convertPGK = () => {this.setState({converted: this.state.amount * this.state.PGK, where: 'Papua New Guinea PGK'})}
 	convertPKR = () => {this.setState({converted: this.state.amount * this.state.PKR, where: 'Pakistan PKR'})}
 	convertCDF = () => {this.setState({converted: this.state.amount * this.state.CDF, where: 'Congo CDF'})}
+	convertGBP = () => {this.setState({converted: this.state.amount * this.state.GBP, where: 'England GBP'})}
 
 	handleInputChangeAmount = (e) => {this.setState({ amount: e.target.value });}	
 
@@ -206,7 +208,7 @@ export default class HomePage extends React.Component{
 								<button className="btn" title="Papua New Guinea" id="papua-new-guinea" type="button" onClick={this.convertPGK}>{buttonHolder}</button>
 								<button className="btn" title="Pakistan" id="pakistan" type="button" onClick={this.convertPKR}>{buttonHolder}</button>
 								<button className="btn" title="Congo" id="congo" type="button" onClick={this.convertCDF}>{buttonHolder}</button>
-								
+								<button className="btn" title="Enlgand" id="england" type="button" onClick={this.convertGBP}>{buttonHolder}</button>
 							</Card>
 
 						</div>
