@@ -66,53 +66,53 @@ export default class HomePage extends React.Component{
 		
 	}
 
-	convertCAD = () => {this.setState({converted: this.state.amount * this.state.CAD, where: 'Canada CAD'})}
-	convertBRL = () => {this.setState({converted: this.state.amount * this.state.BRL, where: 'Brazil BRL'})}
-	convertMXN = () => {this.setState({converted: this.state.amount * this.state.MXN, where: 'Mexico MXN'})}
-	convertEUR = () => {this.setState({converted: this.state.amount * this.state.EUR, where: 'Europe EUR'})}
-	convertCNY = () => {this.setState({converted: this.state.amount * this.state.CNY, where: 'China CNY'})}
-	convertRUB = () => {this.setState({converted: this.state.amount * this.state.RUB, where: 'Russia RUB'})}
-	convertAUD = () => {this.setState({converted: this.state.amount * this.state.AUD, where: 'Australia AUD'})}
-	convertINR = () => {this.setState({converted: this.state.amount * this.state.INR, where: 'India INR'})}
-	convertARS = () => {this.setState({converted: this.state.amount * this.state.ARS, where: 'Argentina ARS'})}
-	convertIRR = () => {this.setState({converted: this.state.amount * this.state.IRR, where: 'Iran IRR'})}
-	convertJPY = () => {this.setState({converted: this.state.amount * this.state.JPY, where: 'Japan JPY'})}
-	convertDZD = () => {this.setState({converted: this.state.amount * this.state.JPY, where: 'Algeria DZD'})}
-	convertZAR = () => {this.setState({converted: this.state.amount * this.state.ZAR, where: 'South Africa ZAR'})}
-	convertEGP = () => {this.setState({converted: this.state.amount * this.state.EGP, where: 'Egypt EGP'})}
-	convertISK = () => {this.setState({converted: this.state.amount * this.state.ISK, where: 'Iceland ISK'})}
-	convertSEK = () => {this.setState({converted: this.state.amount * this.state.SEK, where: 'Sweden SEK'})}
-	convertKZT = () => {this.setState({converted: this.state.amount * this.state.KZT, where: 'Kazakhstan KZT'})}
-	convertNGN = () => {this.setState({converted: this.state.amount * this.state.NGN, where: 'Nigeria NGN'})}
-	convertPEN = () => {this.setState({converted: this.state.amount * this.state.PEN, where: 'Peru PEN'})}
-	convertUYU = () => {this.setState({converted: this.state.amount * this.state.UYU, where: 'Uruguay UYU'})}
-	convertBOB = () => {this.setState({converted: this.state.amount * this.state.BOB, where: 'Bolivia BOB'})}
-	convertAOA = () => {this.setState({converted: this.state.amount * this.state.AOA, where: 'Angola AOA'})}
-	convertPYG = () => {this.setState({converted: this.state.amount * this.state.PYG, where: 'Paraguay PYG'})}
-	convertGHS = () => {this.setState({converted: this.state.amount * this.state.GHS, where: 'Ghana GHS'})}
-	convertTRY = () => {this.setState({converted: this.state.amount * this.state.TRY, where: 'Turkey TRY'})}
-	convertIQD = () => {this.setState({converted: this.state.amount * this.state.IQD, where: 'Iraq IQD'})}
-	convertETB = () => {this.setState({converted: this.state.amount * this.state.ETB, where: 'Ethiopia ETB'})}
-	convertUAH = () => {this.setState({converted: this.state.amount * this.state.UAH, where: 'Ukraine UAH'})}
-	convertCOP = () => {this.setState({converted: this.state.amount * this.state.COP, where: 'Columbia COP'})}
-	convertMNT = () => {this.setState({converted: this.state.amount * this.state.MNT, where: 'Mongolia MNT'})}
-	convertPHP = () => {this.setState({converted: this.state.amount * this.state.PHP, where: 'Philippines PHP'})}
-	convertSAR = () => {this.setState({converted: this.state.amount * this.state.SAR, where: 'Saudi Arabia SAR'})}
-	convertECS = () => {this.setState({converted: this.state.amount * this.state.ECS, where: 'Ecuador ECS'})}
-	convertPLN = () => {this.setState({converted: this.state.amount * this.state.PLN, where: 'Poland PLN'})}
-	convertLYD = () => {this.setState({converted: this.state.amount * this.state.LYD, where: 'Libya LYD'})}
-	convertKRW = () => {this.setState({converted: this.state.amount * this.state.KRW, where: 'South Korea KRW'})}
-	convertTHB = () => {this.setState({converted: this.state.amount * this.state.THB, where: 'Thailand THB'})}
-	convertGYD = () => {this.setState({converted: this.state.amount * this.state.GYD, where: 'Guyana GYD'})}
-	convertCLP = () => {this.setState({converted: this.state.amount * this.state.CLP, where: 'Chile CLP'})}
-	convertNZD = () => {this.setState({converted: this.state.amount * this.state.NZD, where: 'New Zealand NZD'})}
-	convertFJD = () => {this.setState({converted: this.state.amount * this.state.FJD, where: 'Fiji FJD'})}
-	convertMGA = () => {this.setState({converted: this.state.amount * this.state.MGA, where: 'Madagascar MGA'})}
-	convertIDR = () => {this.setState({converted: this.state.amount * this.state.IDR, where: 'Indonesia IDR'})}
-	convertPGK = () => {this.setState({converted: this.state.amount * this.state.PGK, where: 'Papua New Guinea PGK'})}
-	convertPKR = () => {this.setState({converted: this.state.amount * this.state.PKR, where: 'Pakistan PKR'})}
-	convertCDF = () => {this.setState({converted: this.state.amount * this.state.CDF, where: 'Congo CDF'})}
-	convertGBP = () => {this.setState({converted: this.state.amount * this.state.GBP, where: 'England GBP'})}
+	convertCAD = () => {this.setState({converted: this.state.amount / this.state.CAD, where: 'Canada CAD'})}
+	convertBRL = () => {this.setState({converted: this.state.amount / this.state.BRL, where: 'Brazil BRL'})}
+	convertMXN = () => {this.setState({converted: this.state.amount / this.state.MXN, where: 'Mexico MXN'})}
+	convertEUR = () => {this.setState({converted: this.state.amount / this.state.EUR, where: 'Europe EUR'})}
+	convertCNY = () => {this.setState({converted: this.state.amount / this.state.CNY, where: 'China CNY'})}
+	convertRUB = () => {this.setState({converted: this.state.amount / this.state.RUB, where: 'Russia RUB'})}
+	convertAUD = () => {this.setState({converted: this.state.amount / this.state.AUD, where: 'Australia AUD'})}
+	convertINR = () => {this.setState({converted: this.state.amount / this.state.INR, where: 'India INR'})}
+	convertARS = () => {this.setState({converted: this.state.amount / this.state.ARS, where: 'Argentina ARS'})}
+	convertIRR = () => {this.setState({converted: this.state.amount / this.state.IRR, where: 'Iran IRR'})}
+	convertJPY = () => {this.setState({converted: this.state.amount / this.state.JPY, where: 'Japan JPY'})}
+	convertDZD = () => {this.setState({converted: this.state.amount / this.state.JPY, where: 'Algeria DZD'})}
+	convertZAR = () => {this.setState({converted: this.state.amount / this.state.ZAR, where: 'South Africa ZAR'})}
+	convertEGP = () => {this.setState({converted: this.state.amount / this.state.EGP, where: 'Egypt EGP'})}
+	convertISK = () => {this.setState({converted: this.state.amount / this.state.ISK, where: 'Iceland ISK'})}
+	convertSEK = () => {this.setState({converted: this.state.amount / this.state.SEK, where: 'Sweden SEK'})}
+	convertKZT = () => {this.setState({converted: this.state.amount / this.state.KZT, where: 'Kazakhstan KZT'})}
+	convertNGN = () => {this.setState({converted: this.state.amount / this.state.NGN, where: 'Nigeria NGN'})}
+	convertPEN = () => {this.setState({converted: this.state.amount / this.state.PEN, where: 'Peru PEN'})}
+	convertUYU = () => {this.setState({converted: this.state.amount / this.state.UYU, where: 'Uruguay UYU'})}
+	convertBOB = () => {this.setState({converted: this.state.amount / this.state.BOB, where: 'Bolivia BOB'})}
+	convertAOA = () => {this.setState({converted: this.state.amount / this.state.AOA, where: 'Angola AOA'})}
+	convertPYG = () => {this.setState({converted: this.state.amount / this.state.PYG, where: 'Paraguay PYG'})}
+	convertGHS = () => {this.setState({converted: this.state.amount / this.state.GHS, where: 'Ghana GHS'})}
+	convertTRY = () => {this.setState({converted: this.state.amount / this.state.TRY, where: 'Turkey TRY'})}
+	convertIQD = () => {this.setState({converted: this.state.amount / this.state.IQD, where: 'Iraq IQD'})}
+	convertETB = () => {this.setState({converted: this.state.amount / this.state.ETB, where: 'Ethiopia ETB'})}
+	convertUAH = () => {this.setState({converted: this.state.amount / this.state.UAH, where: 'Ukraine UAH'})}
+	convertCOP = () => {this.setState({converted: this.state.amount / this.state.COP, where: 'Columbia COP'})}
+	convertMNT = () => {this.setState({converted: this.state.amount / this.state.MNT, where: 'Mongolia MNT'})}
+	convertPHP = () => {this.setState({converted: this.state.amount / this.state.PHP, where: 'Philippines PHP'})}
+	convertSAR = () => {this.setState({converted: this.state.amount / this.state.SAR, where: 'Saudi Arabia SAR'})}
+	convertECS = () => {this.setState({converted: this.state.amount / this.state.ECS, where: 'Ecuador ECS'})}
+	convertPLN = () => {this.setState({converted: this.state.amount / this.state.PLN, where: 'Poland PLN'})}
+	convertLYD = () => {this.setState({converted: this.state.amount / this.state.LYD, where: 'Libya LYD'})}
+	convertKRW = () => {this.setState({converted: this.state.amount / this.state.KRW, where: 'South Korea KRW'})}
+	convertTHB = () => {this.setState({converted: this.state.amount / this.state.THB, where: 'Thailand THB'})}
+	convertGYD = () => {this.setState({converted: this.state.amount / this.state.GYD, where: 'Guyana GYD'})}
+	convertCLP = () => {this.setState({converted: this.state.amount / this.state.CLP, where: 'Chile CLP'})}
+	convertNZD = () => {this.setState({converted: this.state.amount / this.state.NZD, where: 'New Zealand NZD'})}
+	convertFJD = () => {this.setState({converted: this.state.amount / this.state.FJD, where: 'Fiji FJD'})}
+	convertMGA = () => {this.setState({converted: this.state.amount / this.state.MGA, where: 'Madagascar MGA'})}
+	convertIDR = () => {this.setState({converted: this.state.amount / this.state.IDR, where: 'Indonesia IDR'})}
+	convertPGK = () => {this.setState({converted: this.state.amount / this.state.PGK, where: 'Papua New Guinea PGK'})}
+	convertPKR = () => {this.setState({converted: this.state.amount / this.state.PKR, where: 'Pakistan PKR'})}
+	convertCDF = () => {this.setState({converted: this.state.amount / this.state.CDF, where: 'Congo CDF'})}
+	convertGBP = () => {this.setState({converted: this.state.amount / this.state.GBP, where: 'England GBP'})}
 
 	handleInputChangeAmount = (e) => {this.setState({ amount: e.target.value });}	
 
