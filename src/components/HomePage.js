@@ -126,13 +126,13 @@ export default class HomePage extends React.Component{
 				
 						
 					
-					<Card style={{width: 'fit-screen', position: 'relative', marginLeft: 'auto', marginRight: 'auto', backgroundColor: 'rgb(6, 64, 27)', border:'7px solid rgb(6, 64, 27)'}}>
+					<Card style={{width: '95%', position: 'relative', marginLeft: 'auto', marginRight: 'auto', backgroundColor: 'rgb(6, 64, 27)', border:'7px solid rgb(6, 64, 27)'}}>
 						<h1 className="title-labels">US Currency Calculator</h1>
 						<div className="form">
 							<br/>
 							<Row>
 							<Form.Group as={Col} controlId="formGridZip">
-								<h3 className="title-labels">US Currency Amount</h3>
+								<h3 className="title-labels">USD Currency Amount</h3>
 								{/* <Form.Label >US Currency Amount</Form.Label> */}
 									<InputGroup style={{width: '300px'}} className="mb-3">
 								    	<InputGroup.Text>$</InputGroup.Text>
@@ -160,7 +160,7 @@ export default class HomePage extends React.Component{
 						<br/>	
 						<div className="home-page-body">
 						
-							<Card style={{width: '50rem', position: 'relative', marginLeft: 'auto', marginRight: 'auto', border: '7px solid white'}}>
+							<Card style={{width: '100%', position: 'relative', marginLeft: 'auto', marginRight: 'auto', border: '7px solid white'}}>
 								<img src={WorldMap} width={'max-content'} alt='map' />
 								<button className="btn" title="Canada" id="canada" type="button" onClick={this.convertCAD} onMouseOver={'Canada'}>{buttonHolder}</button>
 								<button className="btn" title="Brazil" id="brazil" type="button" onClick={this.convertBRL}>{buttonHolder}</button>
