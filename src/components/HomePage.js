@@ -126,15 +126,15 @@ export default class HomePage extends React.Component{
 				
 						
 					
-					<Card style={{width: '95%', position: 'relative', marginLeft: 'auto', marginRight: 'auto', backgroundColor: 'rgb(6, 64, 27)', border:'7px solid rgb(6, 64, 27)'}}>
+					<Card style={{width:'fit-content', position: 'relative', marginLeft: 'auto', marginRight: 'auto', backgroundColor: 'rgb(6, 64, 27)', border:'7px solid rgb(6, 64, 27)'}}>
 						<h1 className="title-labels">US Currency Calculator</h1>
 						<div className="form">
 							<br/>
 							<Row>
 							<Form.Group as={Col} controlId="formGridZip">
-								<h3 className="title-labels">USD Currency Amount</h3>
+								<h3 className="title-labels">USD Amount</h3>
 								{/* <Form.Label >US Currency Amount</Form.Label> */}
-									<InputGroup style={{width: '300px'}} className="mb-3">
+									<InputGroup style={{width: 'max-content'}} className="mb-3">
 								    	<InputGroup.Text>$</InputGroup.Text>
 								  	 		 <Form.Control  type="number" value={ this.state.amount } onChange={ this.handleInputChangeAmount }  />
 								    	<InputGroup.Text>.00</InputGroup.Text>
@@ -148,7 +148,7 @@ export default class HomePage extends React.Component{
 							<Form.Group as={Col} controlId="formGridZip">
 								<h3 className="title-labels">{this.state.where}</h3>
 								{/* <Form.Label>{this.state.where}</Form.Label> */}
-									<InputGroup style={{width: '300px'}} className="mb-3">
+									<InputGroup style={{width: 'max-content'}} className="mb-3">
 								    	<InputGroup.Text>$</InputGroup.Text>
 								  	 		 <Form.Control disabled="true" type="number" value={ this.state.converted }  />
 								    	
@@ -160,7 +160,7 @@ export default class HomePage extends React.Component{
 						<br/>	
 						<div className="home-page-body">
 						
-							<Card style={{width: '100%', position: 'relative', marginLeft: 'auto', marginRight: 'auto', border: '7px solid white'}}>
+							<Card style={{height:'100%', position: 'relative', marginLeft: 'auto', marginRight: 'auto', border: '7px solid white', }}>
 								<img src={WorldMap} width={'max-content'} alt='map' />
 								<button className="btn" title="Canada" id="canada" type="button" onClick={this.convertCAD} onMouseOver={'Canada'}>{buttonHolder}</button>
 								<button className="btn" title="Brazil" id="brazil" type="button" onClick={this.convertBRL}>{buttonHolder}</button>
